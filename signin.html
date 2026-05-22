@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMFIT - Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans antialiased flex items-center justify-center min-h-screen px-4">
+
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full max-w-md">
+        
+        <div class="text-center mb-8">
+            <a href="index.html" class="text-3xl font-black tracking-wider text-red-500">GYM<span class="text-white">FIT</span></a>
+            <h1 class="text-xl font-bold mt-4 text-white">Masuk ke Akun Member</h1>
+            <p class="text-gray-500 text-xs mt-1">Masukkan email dan password kamu untuk memantau latihan.</p>
+        </div>
+
+        <form action="#" method="POST" class="space-y-5" onsubmit="event.preventDefault(); window.location.href='index.html'; alert('Login Berhasil!');">
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Alamat Email</label>
+                <input type="email" required placeholder="name@example.com" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3.5 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+            
+            <div>
+                <div class="flex justify-between items-center mb-2">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Password</label>
+                    <a href="#" class="text-xs text-red-500 hover:underline">Lupa Password?</a>
+                </div>
+                <input type="password" required placeholder="••••••••" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3.5 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white py-3.5 rounded-xl font-bold transition text-sm shadow-lg shadow-red-600/10 mt-2">
+                Sign In
+            </button>
+        </form>
+
+        <div class="text-center mt-6 text-sm text-gray-500">
+            Belum punya akun? <a href="signup.html" class="text-red-500 font-semibold hover:underline">Daftar Sekarang</a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="index.html" class="text-xs text-gray-600 hover:text-gray-400 transition">&larr; Kembali ke Beranda</a>
+        </div>
+    </div>
+
+</body>
+</html>

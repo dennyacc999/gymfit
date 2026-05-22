@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMFIT - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans antialiased flex items-center justify-center min-h-screen px-4 py-10">
+
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full max-w-md">
+        
+        <div class="text-center mb-8">
+            <a href="index.html" class="text-3xl font-black tracking-wider text-red-500">GYM<span class="text-white">FIT</span></a>
+            <h1 class="text-xl font-bold mt-4 text-white">Daftar Member Baru</h1>
+            <p class="text-gray-500 text-xs mt-1">Gabung sekarang untuk mulai mencatat set latihan bebannmu.</p>
+        </div>
+
+        <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); window.location.href='signin.html'; alert('Pendaftaran Berhasil! Silakan Sign In.');">
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Nama Lengkap</label>
+                <input type="text" required placeholder="Masukkan nama lengkap" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Alamat Email</label>
+                <input type="email" required placeholder="name@example.com" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+            
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Password Baru</label>
+                <input type="password" required placeholder="Minimal 8 karakter" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Konfirmasi Password</label>
+                <input type="password" required placeholder="Ulangi password baru" class="w-full bg-black border border-zinc-800 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white py-3.5 rounded-xl font-bold transition text-sm shadow-lg shadow-red-600/10 mt-4">
+                Sign Up
+            </button>
+        </form>
+
+        <div class="text-center mt-6 text-sm text-gray-500">
+            Sudah punya akun member? <a href="signin.html" class="text-red-500 font-semibold hover:underline">Sign In disini</a>
+        </div>
+    </div>
+
+</body>
+</html>

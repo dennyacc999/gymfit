@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness Center - Menu Latihan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+
+    <nav class="bg-zinc-950 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-black tracking-wider text-red-500">GYM<span class="text-white">FIT</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-red-500 font-bold border-b-2 border-red-500 pb-1">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-red-500 transition">About Us</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-red-500 transition">Contact</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="signin.html" class="text-sm text-gray-300 hover:text-white transition">Sign In</a>
+                    <a href="signup.html" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-bold transition text-sm">Sign Up</a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-400 hover:text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-zinc-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="index.html" class="block text-red-500 font-bold">Home</a>
+            <a href="about.html" class="block text-gray-300 hover:text-red-500">About Us</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-red-500">Contact</a>
+            <div class="border-t border-zinc-800 pt-3 flex flex-col space-y-2">
+                <a href="signin.html" class="text-center text-sm text-gray-300 py-2">Sign In</a>
+                <a href="signup.html" class="text-center bg-red-600 text-white py-2.5 rounded-xl font-bold text-sm">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-gradient-to-b from-zinc-950 to-black py-16 px-4 text-center border-b border-zinc-900">
+        
+    </header>
+
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 md:pt-16">
+        <div class="flex flex-row items-center justify-between w-full min-h-[320px] md:min-h-[480px] relative gap-4 pb-12">
+            
+            <div class="w-1/2 md:w-6/12 space-y-3 md:space-y-6 z-10">
+                <span class="text-red-500 font-bold uppercase tracking-wider text-[10px] md:text-sm block">Fitness Workout Planner</span>
+                <h1 class="text-xl md:text-6xl font-black text-white leading-tight">
+                    Helps for your <br class="hidden md:block">
+                    <span class="text-red-500">ideal body fitness</span>
+                </h1>
+                <p class="text-zinc-400 text-[10px] md:text-base max-w-md hidden sm:block">
+                    Pilih kelompok otot yang ingin kamu latih hari ini dan ikuti animasi panduan gerakan secara presisi.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-2 md:gap-4 pt-1 md:pt-2">
+                    <a href="#mulai" class="bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-2 md:px-8 md:py-3.5 rounded-lg md:rounded-xl text-center text-[11px] md:text-base">Start Training</a>
+                    <button class="flex items-center justify-center gap-1 md:gap-2 text-white font-medium text-[11px] md:text-base hover:text-red-500 transition">
+                        <span class="bg-zinc-800 p-1 md:p-2 rounded-full text-[9px] md:text-base">▶</span> Watch Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-1/2 md:w-5/12 relative flex justify-end items-center h-[200px] md:h-[450px] z-10 lg:pr-4">
+                <div class="absolute right-0 text-[2.5rem] sm:text-[5rem] md:text-[8rem] font-black text-zinc-900/40 select-none uppercase tracking-widest rotate-90 md:rotate-95 pointer-events-none font-sans z-0">
+                    Fitness
+                </div>
+                <img src="img/gym-model.jpg.png" alt="Fitness Model" class="h-full md:h-[420px] w-auto object-contain relative z-10 filter drop-shadow-[0_0_20px_rgba(239,68,68,0.15)] ml-auto">
+            </div>
+
+        </div>
+
+        <div id="mulai" class="pt-8"></div>
+
+        <div class="flex justify-start md:justify-center items-center gap-3 overflow-x-auto pb-4 mb-10 w-full">
+            <a href="index.html" class="flex-shrink-0 bg-red-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md shadow-red-600/20">Dada (Chest)</a>
+            <a href="perut.html" class="flex-shrink-0 bg-zinc-900 border border-zinc-800 text-gray-400 px-6 py-3 rounded-full font-bold text-sm hover:bg-zinc-800 hover:text-white transition">Perut (Abs)</a>
+            <a href="punggung.html" class="flex-shrink-0 bg-zinc-900 border border-zinc-800 text-gray-400 px-6 py-3 rounded-full font-bold text-sm hover:bg-zinc-800 hover:text-white transition">Punggung (Back)</a>
+            <a href="kaki.html" class="flex-shrink-0 bg-zinc-900 border border-zinc-800 text-gray-400 px-6 py-3 rounded-full font-bold text-sm hover:bg-zinc-800 hover:text-white transition">Kaki (Legs)</a>
+        </div>
+    </div>
+        <div class="mb-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+
+    <div class="mb-8">
+        <h2 class="text-xl md:text-2xl font-black tracking-tight text-white">Daftar Gerakan Dada Hari Ini</h2>
+        <p class="text-gray-500 text-xs mt-1">Ikuti contoh gerakan animasi di bawah ini secara perlahan.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 flex flex-col justify-between shadow-xl">
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">1. Flat Bench Press</h3>
+                <div class="bg-zinc-950 rounded-xl overflow-hidden h-48 flex items-center justify-center border border-zinc-800 mb-4">
+                   <img src="img/bench-press.gif" alt="Animasi Bench Press" class="w-full h-full object-contain">
+                </div>
+            </div>
+            <div class="border-t border-zinc-800 pt-4 mt-2">
+                <p class="text-xs text-red-400 font-semibold uppercase tracking-wider mb-2">Target: 4 Set x 12 Reps</p>
+                <label class="block text-xs text-gray-500 mb-1">Catatan Beban Hari Ini:</label>
+                <input type="text" placeholder="Contoh: Set 1 - 40kg x 12" class="w-full bg-black border border-zinc-800 text-gray-300 text-sm rounded-lg p-2 focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 flex flex-col justify-between shadow-xl">
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">2. Incline Dumbbell Press</h3>
+                <div class="bg-zinc-950 rounded-xl overflow-hidden h-48 flex items-center justify-center border border-zinc-800 mb-4">
+                    <img src="img/incline-press.gif" alt="Animasi Incline Press" class="w-full h-full object-contain">
+                </div>
+            </div>
+            <div class="border-t border-zinc-800 pt-4 mt-2">
+                <p class="text-xs text-red-400 font-semibold uppercase tracking-wider mb-2">Target: 3 Set x 12 Reps</p>
+                <label class="block text-xs text-gray-500 mb-1">Catatan Beban Hari Ini:</label>
+                <input type="text" placeholder="Contoh: Set 1 - 16kg x 12" class="w-full bg-black border border-zinc-800 text-gray-300 text-sm rounded-lg p-2 focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 flex flex-col justify-between shadow-xl">
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">3. Pec Deck Fly</h3>
+                <div class="bg-zinc-950 rounded-xl overflow-hidden h-48 flex items-center justify-center border border-zinc-800 mb-4">
+                    <img src="img/pec-deck.gif" alt="Animasi Pec Deck" class="w-full h-full object-contain">
+                </div>
+            </div>
+            <div class="border-t border-zinc-800 pt-4 mt-2">
+                <p class="text-xs text-red-400 font-semibold uppercase tracking-wider mb-2">Target: 3 Set x 15 Reps</p>
+                <label class="block text-xs text-gray-500 mb-1">Catatan Beban Hari Ini:</label>
+                <input type="text" placeholder="Contoh: Set 1 - 35kg x 15" class="w-full bg-black border border-zinc-800 text-gray-300 text-sm rounded-lg p-2 focus:outline-none focus:border-red-500 placeholder-zinc-700">
+            </div>
+        </div>
+
+    </div>
+
+</div> 
+
+
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-6 text-center text-xs text-gray-600 mt-16">
+        <p>&copy; 2026 GYMFIT Center. Tugas Project Ujian Web Responsive.</p>
+    </footer>
+
+</body>
+</html>
